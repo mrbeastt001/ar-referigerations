@@ -490,7 +490,7 @@ function Home() {
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {WHY.map((w, i) => (
               <Reveal as="li" key={w.title} delay={i * 50}>
-                <div className="h-full rounded-2xl border border-border bg-card p-5">
+                <div className="h-full rounded-2xl border border-border bg-card p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)]">
                   <span className="inline-flex size-10 items-center justify-center rounded-lg bg-accent/15 text-accent-foreground">
                     <w.icon className="size-5" aria-hidden="true" />
                   </span>
