@@ -467,7 +467,7 @@ function Home() {
                 <Reveal as="li" key={s.title} delay={i * 60}>
                   <article className="card-surface h-full p-6">
                     <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                      <s.icon className="size-5.5" aria-hidden="true" />
+                      <s.icon className="size-5" aria-hidden="true" />
                     </span>
                     <h3 className="mt-4 text-lg font-bold">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
