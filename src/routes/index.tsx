@@ -388,7 +388,7 @@ function Home() {
         </section>
 
         {/* Quick action strip */}
-        <section aria-label="Quick actions" className="mx-auto -mt-6 max-w-6xl px-4">
+        <section aria-label="Quick actions" className="mx-auto mt-6 max-w-6xl px-4">
           <div className="card-surface grid gap-3 p-4 sm:grid-cols-3">
             <a href={TEL} className="flex items-center gap-3 rounded-xl bg-secondary px-4 py-3 transition-colors hover:bg-muted">
               <Phone className="size-5 text-primary" aria-hidden="true" />
