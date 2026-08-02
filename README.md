@@ -164,7 +164,6 @@ Technical Requirements
 
 Generate a complete production-ready website using semantic HTML5, modern CSS, and JavaScript. Include proper Local Business Schema (JSON-LD), meta title, meta description, Open Graph tags, favicon support, accessibility best practices, lazy-loaded images, and fully responsive design optimized for Google ranking and conversions. The final result should feel like a premium local business website that can realistically rank for AC service and spare parts searches in Lucknow while maximizing customer calls and WhatsApp inquiries.
 
-
 
 
 Raghunath Puram Tiraha, near Gita Puri Gramin Bank, Khargapur, Gomti Nagar, Khargapur, Lucknow, Uttar Pradesh 226010
@@ -283,7 +282,7 @@ Very good quality ac parts
 
 Response from the owner 4 months ago
 
-Thank you 
+Thank you
 
  
 
@@ -313,8 +312,8 @@ Anees Khan
 
 2 months ago
 
-Always get better experience here all staff very  technically good knowledgeable  explain only genuine problems and give recommendations.""
-Spacially  mr. Shahzad are very nice, and helpful ""Excellent ""Quick installation and no hidden charges!"
+Always get better experience here all staff very technically good knowledgeable explain only genuine problems and give recommendations.""
+Spacially mr. Shahzad are very nice, and helpful ""Excellent ""Quick installation and no hidden charges!"
 
 Like
 
@@ -322,7 +321,7 @@ Spacially  mr. Shahzad are very nice, and helpful ""Excellent ""Quick installati
 
 Response from the owner 2 months ago
 
-Thanks for your response 👍  …
+Thanks for your response 👍 …
 
  
 
@@ -345,7 +344,7 @@ All essential AC spare parts are available here with good quality and reasonable
 
 Response from the owner 5 months ago
 
-Thank you Ankit ji 
+Thank you Ankit ji
 
  
 

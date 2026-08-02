@@ -41,7 +41,9 @@ const DIRECTIONS =
   encodeURIComponent("AC Spare Parts & Gas Service, Khargapur, Gomti Nagar, Lucknow 226010");
 const MAP_EMBED =
   "https://www.google.com/maps?q=" +
-  encodeURIComponent("Raghunath Puram Tiraha, Khargapur, Gomti Nagar, Lucknow, Uttar Pradesh 226010") +
+  encodeURIComponent(
+    "Raghunath Puram Tiraha, Khargapur, Gomti Nagar, Lucknow, Uttar Pradesh 226010",
+  ) +
   "&output=embed";
 
 const TITLE = "AC Spare Parts & Gas Service, Lucknow | AC Repair & Gas Filling";
@@ -185,14 +187,46 @@ const SERVICES = [
 ];
 
 const WHY = [
-  { icon: BadgeCheck, title: "Genuine AC Spare Parts", text: "Brand-original parts, properly tested before they leave the counter." },
-  { icon: IndianRupee, title: "Affordable Pricing", text: "Fair shop rates with no hidden charges added later." },
-  { icon: Handshake, title: "Honest Diagnosis", text: "We tell you the real fault — and only what actually needs replacing." },
-  { icon: Wrench, title: "Experienced Technicians", text: "Years of hands-on work on every major AC brand and model." },
-  { icon: Timer, title: "Fast Service", text: "Quick turnaround so your AC is cooling again the same day where possible." },
-  { icon: ShieldCheck, title: "Quality Workmanship", text: "Clean, careful fitting and finishing on every installation and repair." },
-  { icon: HeartHandshake, title: "Customer-First Approach", text: "Clear explanations, patient guidance and zero pressure to buy." },
-  { icon: LifeBuoy, title: "Reliable After-Service", text: "We stay available after the job for follow-up support." },
+  {
+    icon: BadgeCheck,
+    title: "Genuine AC Spare Parts",
+    text: "Brand-original parts, properly tested before they leave the counter.",
+  },
+  {
+    icon: IndianRupee,
+    title: "Affordable Pricing",
+    text: "Fair shop rates with no hidden charges added later.",
+  },
+  {
+    icon: Handshake,
+    title: "Honest Diagnosis",
+    text: "We tell you the real fault — and only what actually needs replacing.",
+  },
+  {
+    icon: Wrench,
+    title: "Experienced Technicians",
+    text: "Years of hands-on work on every major AC brand and model.",
+  },
+  {
+    icon: Timer,
+    title: "Fast Service",
+    text: "Quick turnaround so your AC is cooling again the same day where possible.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Quality Workmanship",
+    text: "Clean, careful fitting and finishing on every installation and repair.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Customer-First Approach",
+    text: "Clear explanations, patient guidance and zero pressure to buy.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Reliable After-Service",
+    text: "We stay available after the job for follow-up support.",
+  },
 ];
 
 const REVIEWS = [
@@ -308,7 +342,13 @@ function Home() {
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
           <a href="#top" className="flex items-center gap-2.5">
-            <img src={logoImg} alt={`${BUSINESS} logo`} width={40} height={40} className="size-9 rounded-lg" />
+            <img
+              src={logoImg}
+              alt={`${BUSINESS} logo`}
+              width={40}
+              height={40}
+              className="size-9 rounded-lg"
+            />
             <span className="text-sm font-bold leading-tight sm:text-base">
               AC Spare Parts
               <span className="block text-xs font-medium text-muted-foreground">
@@ -351,9 +391,9 @@ function Home() {
                 AC Spare Parts, Repair &amp; Gas Filling in Lucknow
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-                Your trusted neighbourhood air conditioning store and AC service centre in Khargapur,
-                Gomti Nagar. Genuine parts, honest diagnosis and experienced AC technicians — for homes
-                and businesses across Lucknow.
+                Your trusted neighbourhood air conditioning store and AC service centre in
+                Khargapur, Gomti Nagar. Genuine parts, honest diagnosis and experienced AC
+                technicians — for homes and businesses across Lucknow.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <CallButton />
@@ -379,7 +419,6 @@ function Home() {
                 height={960}
                 className="w-full rounded-3xl object-cover shadow-[var(--shadow-float)]"
               />
-            
             </div>
           </div>
         </section>
@@ -387,7 +426,10 @@ function Home() {
         {/* Quick action strip */}
         <section aria-label="Quick actions" className="mx-auto mt-6 max-w-6xl px-4">
           <div className="card-surface grid gap-3 p-4 sm:grid-cols-3">
-            <a href={TEL} className="flex items-center gap-3 rounded-xl bg-secondary px-4 py-3 transition-colors hover:bg-muted">
+            <a
+              href={TEL}
+              className="flex items-center gap-3 rounded-xl bg-secondary px-4 py-3 transition-colors hover:bg-muted"
+            >
               <Phone className="size-5 text-primary" aria-hidden="true" />
               <span className="text-sm font-semibold">Call {PHONE_DISPLAY}</span>
             </a>
@@ -400,7 +442,10 @@ function Home() {
               <Navigation className="size-5 text-primary" aria-hidden="true" />
               <span className="text-sm font-semibold">Get Directions</span>
             </a>
-            <a href="#contact" className="flex items-center gap-3 rounded-xl bg-secondary px-4 py-3 transition-colors hover:bg-muted">
+            <a
+              href="#contact"
+              className="flex items-center gap-3 rounded-xl bg-secondary px-4 py-3 transition-colors hover:bg-muted"
+            >
               <Wrench className="size-5 text-primary" aria-hidden="true" />
               <span className="text-sm font-semibold">Request Service</span>
             </a>
@@ -421,19 +466,22 @@ function Home() {
               />
             </Reveal>
             <Reveal delay={80}>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">About Us</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                About Us
+              </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
                 A local AC shop Lucknow customers keep coming back to
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                AC Spare Parts &amp; Gas Service is an air conditioning store and AC service centre in
-                Khargapur, Gomti Nagar. We keep a wide stock of genuine air conditioner spare parts and
-                handle AC repair, gas filling, installation, servicing and maintenance ourselves.
+                AC Spare Parts &amp; Gas Service is an air conditioning store and AC service centre
+                in Khargapur, Gomti Nagar. We keep a wide stock of genuine air conditioner spare
+                parts and handle AC repair, gas filling, installation, servicing and maintenance
+                ourselves.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Customers trust us because we explain the actual fault, recommend only what is needed and
-                charge fairly. That is how we earned a 5.0-star Google rating from our neighbours in
-                Lucknow.
+                Customers trust us because we explain the actual fault, recommend only what is
+                needed and charge fairly. That is how we earned a 5.0-star Google rating from our
+                neighbours in Lucknow.
               </p>
               <dl className="mt-7 grid grid-cols-3 gap-3">
                 {[
@@ -480,10 +528,7 @@ function Home() {
 
         {/* Why choose us */}
         <section id="why-us" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Honest work, genuine parts, fair prices"
-          />
+          <SectionHeading eyebrow="Why Choose Us" title="Honest work, genuine parts, fair prices" />
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {WHY.map((w, i) => (
               <Reveal as="li" key={w.title} delay={i * 50}>
@@ -556,14 +601,23 @@ function Home() {
                     Business Hours
                   </h3>
                   <ul className="mt-2 space-y-1.5 text-sm">
-                    {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map(
-                      (d) => (
-                        <li key={d} className="flex justify-between gap-4 border-b border-border/70 pb-1.5">
-                          <span className="text-muted-foreground">{d}</span>
-                          <span className="font-semibold">9:00 AM – 9:00 PM</span>
-                        </li>
-                      ),
-                    )}
+                    {[
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                      "Sunday",
+                    ].map((d) => (
+                      <li
+                        key={d}
+                        className="flex justify-between gap-4 border-b border-border/70 pb-1.5"
+                      >
+                        <span className="text-muted-foreground">{d}</span>
+                        <span className="font-semibold">9:00 AM – 9:00 PM</span>
+                      </li>
+                    ))}
                   </ul>
                   <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1.5 text-xs font-semibold text-accent-foreground">
                     Open all 7 days, including holidays
@@ -613,8 +667,8 @@ function Home() {
             <div className="hero-surface rounded-3xl px-6 py-12 text-center text-primary-foreground">
               <h2 className="text-3xl font-bold sm:text-4xl">AC not cooling? Message us now.</h2>
               <p className="mx-auto mt-3 max-w-xl text-base text-primary-foreground/85">
-                Send your AC brand, model and the issue on WhatsApp — we reply with an honest estimate and
-                part availability.
+                Send your AC brand, model and the issue on WhatsApp — we reply with an honest
+                estimate and part availability.
               </p>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
                 <WhatsAppButton />
@@ -670,12 +724,19 @@ function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <img src={logoImg} alt="" width={36} height={36} loading="lazy" className="size-9 rounded-lg" />
+              <img
+                src={logoImg}
+                alt=""
+                width={36}
+                height={36}
+                loading="lazy"
+                className="size-9 rounded-lg"
+              />
               <span className="text-base font-bold">{BUSINESS}</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/75">
-              AC spare parts shop and AC service centre in Gomti Nagar, Lucknow. AC repair, gas filling,
-              installation and genuine spare parts for homes and businesses.
+              AC spare parts shop and AC service centre in Gomti Nagar, Lucknow. AC repair, gas
+              filling, installation and genuine spare parts for homes and businesses.
             </p>
             <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold">
               <Stars /> 5.0 · 17 reviews
