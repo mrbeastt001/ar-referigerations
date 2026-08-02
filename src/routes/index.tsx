@@ -379,10 +379,7 @@ function Home() {
                 height={960}
                 className="w-full rounded-3xl object-cover shadow-[var(--shadow-float)]"
               />
-              <div className="absolute -bottom-5 left-4 rounded-2xl bg-card px-4 py-3 text-card-foreground shadow-[var(--shadow-float)]">
-                <p className="text-xs font-medium text-muted-foreground">Same-day service</p>
-                <p className="text-sm font-bold">Repair · Gas · Installation</p>
-              </div>
+            
             </div>
           </div>
         </section>
